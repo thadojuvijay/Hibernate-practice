@@ -25,12 +25,16 @@ Connection connection = DriverManager.getConnection("jdbc:oracle:thin:@localhost
 	  the data  available in the resultset object into another program
 	  
 	  *then we have the technique to solve this problem.
-	  *first we need to create an class name as database table name and then we need to declared
-	 the  instance variables in the class is depends on how many columns available in that
-	 database table name and next we need to setter&getter methods to store and display the data.
+	  *first we need to create an class name same  as database table name and then we need to declared
+	 the  instance variables in that class is depends on how many columns available in that
+	 database table name and next we need to use setter&getter methods to store and display the data.
 	 
-	 *and create the object object of this class employee and store that 
-	  
+	 *and create the object of this class employee and store by  get the data from resultset object and using getmethod and stored
+	 that resultset object data into employee object using setter method
+	  Example:
+	  employee.setEid(resultSet.getInt(1));
+	employee.setEname(resultSet.getString(2));
+	employee.setEsalary(resultSet.getDouble(3));
 	 * 
 	 * 
 	 * 
