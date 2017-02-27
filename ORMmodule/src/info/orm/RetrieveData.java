@@ -18,7 +18,7 @@ Connection connection = DriverManager.getConnection("jdbc:oracle:thin:@localhost
 	ResultSet resultSet = statement.executeQuery("select * from employee");
 	/* which class i open the connection in that class or method i must compulasory
 	  close that connection in that method or class only.
-	  if we close the connection in that method.ResultSet object will lose.when we close 
+	  if we close the connection in that method.when we close 
 	  the connection the resultSet object will be gone
 	  *so we cannot transfer resultSet object into one program to another program.
 	  *if we not have possibilty to transfer the resultset object we cannot access
