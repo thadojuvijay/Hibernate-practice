@@ -1,0 +1,18 @@
+in  real time projects we will always use our username & password
+we will never use scott/tiger.
+it is the responsibility of database Administrator to create username & password.
+connect system/tiger.
+the default username in all  computers is system. and password is user choice.
+
+
+
+
+                                   how to create user
+          
+          sysntax:   create user username identified by password;
+                           1.create user bms identified by abc;
+                           
+              how to give permission to that username?
+              
+           2. grant connect,resource to username;
+             grant connect,resource to bms;
