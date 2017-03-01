@@ -16,3 +16,36 @@ the default username in all  computers is system. and password is user choice.
               
            2. grant connect,resource to username;
              grant connect,resource to bms;
+ 
+ 3. To delete the records in a table
+ SQL> truncate table Address;
+ 
+ 
+ 4.To see how many columns in the  table
+ 
+ desc Address;
+ Name                                      Null?    Type
+ ----------------------------------------- -------- ----------------------------
+ STREET                                             VARCHAR2(50)
+ CITY                                               VARCHAR2(50)
+ STATE                                              VARCHAR2(50)
+ COUNTRY                                            VARCHAR2(50)
+ PINCODE                                            NUMBER(10,2)
+ 
+ 
+ 5. to see the records available in the table
+ 
+  select * from Address;
+
+STREET
+--------------------------------------------------
+CITY
+--------------------------------------------------
+STATE
+--------------------------------------------------
+COUNTRY                                               PINCODE
+-------------------------------------------------- ----------
+uppal
+hyderabad
+telangana
+india                                                  500039
